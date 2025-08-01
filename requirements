@@ -1,0 +1,14 @@
+beautifulsoup4==4.13.4
+certifi==2025.7.14
+charset-normalizer==3.4.2
+nltk==3.9.1
+numpy==2.3.2
+openai==0.28.0
+pandas==2.3.1
+pdfminer.six==20250506
+pdfplumber==0.11.7
+pyairtable==3.1.1
+RapidFuzz==3.13.0
+regex==2025.7.29
+requests==2.32.4
+tqdm==4.67.1
