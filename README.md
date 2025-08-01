@@ -24,4 +24,55 @@ An end-to-end NLP pipeline for extracting information from electric vehicle (EV)
 ---
 
 ## 📁 Directory Structure
+ev-qa-pipeline/
+-  ├── cleaning_pairs.py         
+-  ├── chunks_eval2.py          
+-  ├── config.py                 
+-  ├── data_preprocessing.py     
+-  ├── generate_QA.py           
+-  ├── main.py                   
+-  ├── run_pipeline.py           
+-  ├── scrapper2.py            
+-  ├── README.md                 
+-  ├── .gitignore               
+-  └── requirements.txt          
 
+
+---
+
+## 🚀 Usage
+
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+---
+2. **Set API keys in config.py**:
+
+-  API_CONFIG['openrouter']['api_key']
+-  API_CONFIG['groq']['api_key']
+  
+---
+
+3. **Run the pipeline**:
+- python run_pipeline.py
+
+---
+
+## 📊 Output Files
+chunks_500.csv: All preprocessed chunks
+
+chunk_metrics_500.csv: Quality evaluation for each chunk
+
+chunk_qa.csv: Raw generated Q&A pairs
+
+chunk_qa_deduplicated.csv: Cleaned Q&A pairs
+
+---
+## 🧠 Example Use Cases
+Fine-tuning LLMs on Q&A datasets
+
+QA bots for EV charging companies
+
+Domain-specific educational material generation
+
+   
